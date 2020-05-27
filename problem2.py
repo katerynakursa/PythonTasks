@@ -1,11 +1,8 @@
-def countSub(s, subStr):
-    count = 0
-    i = -1
-    while True:
-        i = s.find(subStr, i+1)
-        if i == -1:
-            return count
-        count += 1
+def countSub(s:str, subStr:str) -> int:
+    """Counts the number of times the substring occurs in the string
+    :return: number of entries"""
+    l = [i for i in range(len(s)) if s.startswith(subStr, i)]
+    return len(l)
 
 s = input('Enter your string:')
 subStr = 'bob'

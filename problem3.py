@@ -1,5 +1,6 @@
 def findLongest(s:str) -> str:
     """Find the longest substring of s in which letters occur in alphabetical order
+    :param s: entered string
     :return: the longest substring"""
     longestSubstr = ''
     orderSubstr = ''
